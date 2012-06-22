@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13AEF0B21594FB7000A37789 /* RHFirstUserExperienceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AEF0B01594FB7000A37789 /* RHFirstUserExperienceManager.m */; };
+		13AEF0B61595058500A37789 /* RHFirstUserExperienceGenericOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AEF0B41595058500A37789 /* RHFirstUserExperienceGenericOverlayView.m */; };
+		13B401E4159514D5004EDEB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B401E3159514D5004EDEB7 /* UIKit.framework */; };
+		13B401FB1595372E004EDEB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B401E3159514D5004EDEB7 /* UIKit.framework */; };
+		13B401FC1595372E004EDEB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA47141594F4FF00718274 /* Foundation.framework */; };
+		13B401FE1595372E004EDEB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B401FD1595372E004EDEB7 /* CoreGraphics.framework */; };
+		13B402041595372E004EDEB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B402021595372E004EDEB7 /* InfoPlist.strings */; };
+		13B402061595372E004EDEB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B402051595372E004EDEB7 /* main.m */; };
+		13B4020A1595372E004EDEB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B402091595372E004EDEB7 /* AppDelegate.m */; };
+		13B4020D1595372E004EDEB7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B4020C1595372E004EDEB7 /* FirstViewController.m */; };
+		13B4020F1595372E004EDEB7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B4020E1595372E004EDEB7 /* first.png */; };
+		13B402111595372E004EDEB7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B402101595372E004EDEB7 /* first@2x.png */; };
+		13B402141595372E004EDEB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B402131595372E004EDEB7 /* SecondViewController.m */; };
+		13B402161595372E004EDEB7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B402151595372E004EDEB7 /* second.png */; };
+		13B402181595372E004EDEB7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B402171595372E004EDEB7 /* second@2x.png */; };
+		13B4021B1595372E004EDEB7 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B402191595372E004EDEB7 /* FirstViewController.xib */; };
+		13B4021E1595372E004EDEB7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B4021C1595372E004EDEB7 /* SecondViewController.xib */; };
+		13B4022315953871004EDEB7 /* FirstUserExperience.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B4022215953871004EDEB7 /* FirstUserExperience.plist */; };
+		13B4022415953979004EDEB7 /* libRHFirstUserExperience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA47111594F4FF00718274 /* libRHFirstUserExperience.a */; };
+		13CA47151594F4FF00718274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA47141594F4FF00718274 /* Foundation.framework */; };
+		13CA471A1594F4FF00718274 /* RHFirstUserExperience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13CA47191594F4FF00718274 /* RHFirstUserExperience.h */; };
+		13DF154F15E83A3900AA2702 /* FUEFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF154E15E83A3900AA2702 /* FUEFirstView.m */; };
+		13DF155215E83A5C00AA2702 /* FUESecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155115E83A5C00AA2702 /* FUESecondView.xib */; };
+		13DF155715EBFC8100AA2702 /* LeftBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155315EBFC8000AA2702 /* LeftBubble.png */; };
+		13DF155815EBFC8100AA2702 /* LeftBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155415EBFC8100AA2702 /* LeftBubble@2x.png */; };
+		13DF155915EBFC8100AA2702 /* rightBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155515EBFC8100AA2702 /* rightBubble.png */; };
+		13DF155A15EBFC8100AA2702 /* rightBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155615EBFC8100AA2702 /* rightBubble@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13B4022515953984004EDEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA47081594F4FF00718274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA47101594F4FF00718274;
+			remoteInfo = RHFirstUserExperience;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13CA470F1594F4FF00718274 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				13CA471A1594F4FF00718274 /* RHFirstUserExperience.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13AEF0B01594FB7000A37789 /* RHFirstUserExperienceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHFirstUserExperienceManager.m; sourceTree = "<group>"; };
+		13AEF0B11594FB7000A37789 /* RHFirstUserExperienceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHFirstUserExperienceManager.h; sourceTree = "<group>"; };
+		13AEF0B31594FBFE00A37789 /* RHFirstUserExperienceOverlayViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHFirstUserExperienceOverlayViewProtocol.h; sourceTree = "<group>"; };
+		13AEF0B41595058500A37789 /* RHFirstUserExperienceGenericOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHFirstUserExperienceGenericOverlayView.m; sourceTree = "<group>"; };
+		13AEF0B51595058500A37789 /* RHFirstUserExperienceGenericOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHFirstUserExperienceGenericOverlayView.h; sourceTree = "<group>"; };
+		13B401E3159514D5004EDEB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13B401F91595372E004EDEB7 /* RHFirstUserExperienceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHFirstUserExperienceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B401FD1595372E004EDEB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13B402011595372E004EDEB7 /* RHFirstUserExperienceDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHFirstUserExperienceDemo-Info.plist"; sourceTree = "<group>"; };
+		13B402031595372E004EDEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13B402051595372E004EDEB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13B402071595372E004EDEB7 /* RHFirstUserExperienceDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RHFirstUserExperienceDemo-Prefix.pch"; sourceTree = "<group>"; };
+		13B402081595372E004EDEB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13B402091595372E004EDEB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13B4020B1595372E004EDEB7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		13B4020C1595372E004EDEB7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		13B4020E1595372E004EDEB7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		13B402101595372E004EDEB7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		13B402121595372E004EDEB7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		13B402131595372E004EDEB7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		13B402151595372E004EDEB7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		13B402171595372E004EDEB7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		13B4021A1595372E004EDEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		13B4021D1595372E004EDEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		13B4022215953871004EDEB7 /* FirstUserExperience.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FirstUserExperience.plist; sourceTree = "<group>"; };
+		13CA47111594F4FF00718274 /* libRHFirstUserExperience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRHFirstUserExperience.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA47141594F4FF00718274 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13CA47181594F4FF00718274 /* RHFirstUserExperience-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RHFirstUserExperience-Prefix.pch"; sourceTree = "<group>"; };
+		13CA47191594F4FF00718274 /* RHFirstUserExperience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHFirstUserExperience.h; sourceTree = "<group>"; };
+		13DF154D15E83A3900AA2702 /* FUEFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUEFirstView.h; sourceTree = "<group>"; };
+		13DF154E15E83A3900AA2702 /* FUEFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUEFirstView.m; sourceTree = "<group>"; };
+		13DF155115E83A5C00AA2702 /* FUESecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FUESecondView.xib; sourceTree = "<group>"; };
+		13DF155315EBFC8000AA2702 /* LeftBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftBubble.png; sourceTree = "<group>"; };
+		13DF155415EBFC8100AA2702 /* LeftBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftBubble@2x.png"; sourceTree = "<group>"; };
+		13DF155515EBFC8100AA2702 /* rightBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightBubble.png; sourceTree = "<group>"; };
+		13DF155615EBFC8100AA2702 /* rightBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightBubble@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B401F61595372E004EDEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B4022415953979004EDEB7 /* libRHFirstUserExperience.a in Frameworks */,
+				13B401FB1595372E004EDEB7 /* UIKit.framework in Frameworks */,
+				13B401FC1595372E004EDEB7 /* Foundation.framework in Frameworks */,
+				13B401FE1595372E004EDEB7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA470E1594F4FF00718274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA47151594F4FF00718274 /* Foundation.framework in Frameworks */,
+				13B401E4159514D5004EDEB7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B401FF1595372E004EDEB7 /* RHFirstUserExperienceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				13B402081595372E004EDEB7 /* AppDelegate.h */,
+				13B402091595372E004EDEB7 /* AppDelegate.m */,
+				13B4022715954943004EDEB7 /* First View Controller */,
+				13B40228159549A0004EDEB7 /* Second View Controller */,
+				13B4022215953871004EDEB7 /* FirstUserExperience.plist */,
+				13B402001595372E004EDEB7 /* Supporting Files */,
+			);
+			path = RHFirstUserExperienceDemo;
+			sourceTree = "<group>";
+		};
+		13B402001595372E004EDEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13B402011595372E004EDEB7 /* RHFirstUserExperienceDemo-Info.plist */,
+				13B402021595372E004EDEB7 /* InfoPlist.strings */,
+				13B402051595372E004EDEB7 /* main.m */,
+				13B402071595372E004EDEB7 /* RHFirstUserExperienceDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B4022715954943004EDEB7 /* First View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13DF154B15E839F600AA2702 /* FUE */,
+				13B4020B1595372E004EDEB7 /* FirstViewController.h */,
+				13B4020C1595372E004EDEB7 /* FirstViewController.m */,
+				13B4020E1595372E004EDEB7 /* first.png */,
+				13B402101595372E004EDEB7 /* first@2x.png */,
+				13B402191595372E004EDEB7 /* FirstViewController.xib */,
+				13DF155315EBFC8000AA2702 /* LeftBubble.png */,
+				13DF155415EBFC8100AA2702 /* LeftBubble@2x.png */,
+				13DF155515EBFC8100AA2702 /* rightBubble.png */,
+				13DF155615EBFC8100AA2702 /* rightBubble@2x.png */,
+			);
+			name = "First View Controller";
+			sourceTree = "<group>";
+		};
+		13B40228159549A0004EDEB7 /* Second View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13DF155015E83A3D00AA2702 /* FUE */,
+				13B402121595372E004EDEB7 /* SecondViewController.h */,
+				13B402131595372E004EDEB7 /* SecondViewController.m */,
+				13B402151595372E004EDEB7 /* second.png */,
+				13B402171595372E004EDEB7 /* second@2x.png */,
+				13B4021C1595372E004EDEB7 /* SecondViewController.xib */,
+			);
+			name = "Second View Controller";
+			sourceTree = "<group>";
+		};
+		13CA47061594F4FF00718274 = {
+			isa = PBXGroup;
+			children = (
+				13CA47161594F4FF00718274 /* RHFirstUserExperience */,
+				13B401FF1595372E004EDEB7 /* RHFirstUserExperienceDemo */,
+				13CA47131594F4FF00718274 /* Frameworks */,
+				13CA47121594F4FF00718274 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13CA47121594F4FF00718274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13CA47111594F4FF00718274 /* libRHFirstUserExperience.a */,
+				13B401F91595372E004EDEB7 /* RHFirstUserExperienceDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13CA47131594F4FF00718274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B401E3159514D5004EDEB7 /* UIKit.framework */,
+				13CA47141594F4FF00718274 /* Foundation.framework */,
+				13B401FD1595372E004EDEB7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13CA47161594F4FF00718274 /* RHFirstUserExperience */ = {
+			isa = PBXGroup;
+			children = (
+				13CA47191594F4FF00718274 /* RHFirstUserExperience.h */,
+				13AEF0B31594FBFE00A37789 /* RHFirstUserExperienceOverlayViewProtocol.h */,
+				13AEF0B11594FB7000A37789 /* RHFirstUserExperienceManager.h */,
+				13AEF0B01594FB7000A37789 /* RHFirstUserExperienceManager.m */,
+				13AEF0B51595058500A37789 /* RHFirstUserExperienceGenericOverlayView.h */,
+				13AEF0B41595058500A37789 /* RHFirstUserExperienceGenericOverlayView.m */,
+				13CA47171594F4FF00718274 /* Supporting Files */,
+			);
+			path = RHFirstUserExperience;
+			sourceTree = "<group>";
+		};
+		13CA47171594F4FF00718274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13CA47181594F4FF00718274 /* RHFirstUserExperience-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13DF154B15E839F600AA2702 /* FUE */ = {
+			isa = PBXGroup;
+			children = (
+				13DF154D15E83A3900AA2702 /* FUEFirstView.h */,
+				13DF154E15E83A3900AA2702 /* FUEFirstView.m */,
+			);
+			name = FUE;
+			sourceTree = "<group>";
+		};
+		13DF155015E83A3D00AA2702 /* FUE */ = {
+			isa = PBXGroup;
+			children = (
+				13DF155115E83A5C00AA2702 /* FUESecondView.xib */,
+			);
+			name = FUE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B401F81595372E004EDEB7 /* RHFirstUserExperienceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B4021F1595372E004EDEB7 /* Build configuration list for PBXNativeTarget "RHFirstUserExperienceDemo" */;
+			buildPhases = (
+				13B401F51595372E004EDEB7 /* Sources */,
+				13B401F61595372E004EDEB7 /* Frameworks */,
+				13B401F71595372E004EDEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13B4022615953984004EDEB7 /* PBXTargetDependency */,
+			);
+			name = RHFirstUserExperienceDemo;
+			productName = RHFirstUserExperienceTester;
+			productReference = 13B401F91595372E004EDEB7 /* RHFirstUserExperienceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13CA47101594F4FF00718274 /* RHFirstUserExperience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA471F1594F4FF00718274 /* Build configuration list for PBXNativeTarget "RHFirstUserExperience" */;
+			buildPhases = (
+				13CA470D1594F4FF00718274 /* Sources */,
+				13CA470E1594F4FF00718274 /* Frameworks */,
+				13CA470F1594F4FF00718274 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHFirstUserExperience;
+			productName = RHFirstUserExperience;
+			productReference = 13CA47111594F4FF00718274 /* libRHFirstUserExperience.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13CA47081594F4FF00718274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Richard Heard";
+			};
+			buildConfigurationList = 13CA470B1594F4FF00718274 /* Build configuration list for PBXProject "RHFirstUserExperience" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13CA47061594F4FF00718274;
+			productRefGroup = 13CA47121594F4FF00718274 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13CA47101594F4FF00718274 /* RHFirstUserExperience */,
+				13B401F81595372E004EDEB7 /* RHFirstUserExperienceDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B401F71595372E004EDEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B402041595372E004EDEB7 /* InfoPlist.strings in Resources */,
+				13B4020F1595372E004EDEB7 /* first.png in Resources */,
+				13B402111595372E004EDEB7 /* first@2x.png in Resources */,
+				13B402161595372E004EDEB7 /* second.png in Resources */,
+				13B402181595372E004EDEB7 /* second@2x.png in Resources */,
+				13B4021B1595372E004EDEB7 /* FirstViewController.xib in Resources */,
+				13B4021E1595372E004EDEB7 /* SecondViewController.xib in Resources */,
+				13B4022315953871004EDEB7 /* FirstUserExperience.plist in Resources */,
+				13DF155215E83A5C00AA2702 /* FUESecondView.xib in Resources */,
+				13DF155715EBFC8100AA2702 /* LeftBubble.png in Resources */,
+				13DF155815EBFC8100AA2702 /* LeftBubble@2x.png in Resources */,
+				13DF155915EBFC8100AA2702 /* rightBubble.png in Resources */,
+				13DF155A15EBFC8100AA2702 /* rightBubble@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B401F51595372E004EDEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B402061595372E004EDEB7 /* main.m in Sources */,
+				13B4020A1595372E004EDEB7 /* AppDelegate.m in Sources */,
+				13B4020D1595372E004EDEB7 /* FirstViewController.m in Sources */,
+				13B402141595372E004EDEB7 /* SecondViewController.m in Sources */,
+				13DF154F15E83A3900AA2702 /* FUEFirstView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA470D1594F4FF00718274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AEF0B21594FB7000A37789 /* RHFirstUserExperienceManager.m in Sources */,
+				13AEF0B61595058500A37789 /* RHFirstUserExperienceGenericOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B4022615953984004EDEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA47101594F4FF00718274 /* RHFirstUserExperience */;
+			targetProxy = 13B4022515953984004EDEB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B402021595372E004EDEB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B402031595372E004EDEB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13B402191595372E004EDEB7 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B4021A1595372E004EDEB7 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		13B4021C1595372E004EDEB7 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B4021D1595372E004EDEB7 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B402201595372E004EDEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHFirstUserExperienceDemo/RHFirstUserExperienceDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RHFirstUserExperienceDemo/RHFirstUserExperienceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13B402211595372E004EDEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHFirstUserExperienceDemo/RHFirstUserExperienceDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RHFirstUserExperienceDemo/RHFirstUserExperienceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13CA471D1594F4FF00718274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13CA471E1594F4FF00718274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13CA47201594F4FF00718274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RHFirstUserExperience.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHFirstUserExperience/RHFirstUserExperience-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		13CA47211594F4FF00718274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RHFirstUserExperience.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHFirstUserExperience/RHFirstUserExperience-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B4021F1595372E004EDEB7 /* Build configuration list for PBXNativeTarget "RHFirstUserExperienceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B402201595372E004EDEB7 /* Debug */,
+				13B402211595372E004EDEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA470B1594F4FF00718274 /* Build configuration list for PBXProject "RHFirstUserExperience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA471D1594F4FF00718274 /* Debug */,
+				13CA471E1594F4FF00718274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA471F1594F4FF00718274 /* Build configuration list for PBXNativeTarget "RHFirstUserExperience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA47201594F4FF00718274 /* Debug */,
+				13CA47211594F4FF00718274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13CA47081594F4FF00718274 /* Project object */;
+}
