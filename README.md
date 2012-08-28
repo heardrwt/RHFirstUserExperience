@@ -1,6 +1,6 @@
 ## RHFirstUserExperience
 
-A comprehensive First User Experience Manager for your next iOS Project.
+A comprehensive first user experience manager for your next iOS project.
 Supporting custom overlay views loaded from classes and Nib files at runtime based on a plist of defined actions.
 
 
@@ -65,7 +65,7 @@ typedef enum {
 
 ## Example Configuration File
 
-![Example Property List Configuration File.](https://github.com/heardrwt/RHPreferences/raw/master/PList.png )
+![Example Property List Configuration File.](https://github.com/heardrwt/RHFirstUserExperience/raw/master/PList.png )
 
 ## Manager Interface
 
@@ -131,7 +131,7 @@ typedef enum {
 
 ![Example Class Based Overlay View.](https://github.com/heardrwt/RHFirstUserExperience/raw/master/Class.png )
 
-![Example Nib Based Overlay View.](https://github.com/heardrwt/RHPreferences/raw/master/Nib.png )
+![Example Nib Based Overlay View.](https://github.com/heardrwt/RHFirstUserExperience/raw/master/Nib.png )
 
 ## Licence
 Released under the Modified BSD License. 
