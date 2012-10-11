@@ -27,13 +27,16 @@
 		13B4022315953871004EDEB7 /* FirstUserExperience.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B4022215953871004EDEB7 /* FirstUserExperience.plist */; };
 		13B4022415953979004EDEB7 /* libRHFirstUserExperience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA47111594F4FF00718274 /* libRHFirstUserExperience.a */; };
 		13CA47151594F4FF00718274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA47141594F4FF00718274 /* Foundation.framework */; };
-		13CA471A1594F4FF00718274 /* RHFirstUserExperience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13CA47191594F4FF00718274 /* RHFirstUserExperience.h */; };
 		13DF154F15E83A3900AA2702 /* FUEFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF154E15E83A3900AA2702 /* FUEFirstView.m */; };
 		13DF155215E83A5C00AA2702 /* FUESecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155115E83A5C00AA2702 /* FUESecondView.xib */; };
 		13DF155715EBFC8100AA2702 /* LeftBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155315EBFC8000AA2702 /* LeftBubble.png */; };
 		13DF155815EBFC8100AA2702 /* LeftBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155415EBFC8100AA2702 /* LeftBubble@2x.png */; };
 		13DF155915EBFC8100AA2702 /* rightBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155515EBFC8100AA2702 /* rightBubble.png */; };
 		13DF155A15EBFC8100AA2702 /* rightBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13DF155615EBFC8100AA2702 /* rightBubble@2x.png */; };
+		13F6C78B162750320011E859 /* RHFirstUserExperience.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA47191594F4FF00718274 /* RHFirstUserExperience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F6C78C162750320011E859 /* RHFirstUserExperienceOverlayViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AEF0B31594FBFE00A37789 /* RHFirstUserExperienceOverlayViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F6C78D162750320011E859 /* RHFirstUserExperienceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AEF0B11594FB7000A37789 /* RHFirstUserExperienceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F6C78E162750320011E859 /* RHFirstUserExperienceGenericOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AEF0B51595058500A37789 /* RHFirstUserExperienceGenericOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,19 +48,6 @@
 			remoteInfo = RHFirstUserExperience;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		13CA470F1594F4FF00718274 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				13CA471A1594F4FF00718274 /* RHFirstUserExperience.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13AEF0B01594FB7000A37789 /* RHFirstUserExperienceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHFirstUserExperienceManager.m; sourceTree = "<group>"; };
@@ -246,6 +236,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		13F6C78A1627501F0011E859 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F6C78B162750320011E859 /* RHFirstUserExperience.h in Headers */,
+				13F6C78C162750320011E859 /* RHFirstUserExperienceOverlayViewProtocol.h in Headers */,
+				13F6C78D162750320011E859 /* RHFirstUserExperienceManager.h in Headers */,
+				13F6C78E162750320011E859 /* RHFirstUserExperienceGenericOverlayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		13B401F81595372E004EDEB7 /* RHFirstUserExperienceDemo */ = {
 			isa = PBXNativeTarget;
@@ -271,7 +275,7 @@
 			buildPhases = (
 				13CA470D1594F4FF00718274 /* Sources */,
 				13CA470E1594F4FF00718274 /* Frameworks */,
-				13CA470F1594F4FF00718274 /* CopyFiles */,
+				13F6C78A1627501F0011E859 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -470,7 +474,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHFirstUserExperience/RHFirstUserExperience-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -482,7 +488,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHFirstUserExperience/RHFirstUserExperience-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
